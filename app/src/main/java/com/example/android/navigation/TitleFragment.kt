@@ -49,7 +49,9 @@ class TitleFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
         return NavigationUI.onNavDestinationSelected(item, findNavController())
+
                 || super.onOptionsItemSelected(item)
     }
 }
